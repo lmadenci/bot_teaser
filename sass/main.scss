@@ -227,11 +227,11 @@ Interactive SVGs
   }
 
   .iphone-svg-holder {
-    transform: scale(.9) translateX(-480px) translateY(290px) ;
+    transform: scale(.8) translateX(-480px) translateY(290px) ;
   }
   .macbook-svg-holder {
-    margin-top:160px;
-    transform: scale(1.12) translateX(40px);
+    margin-top:240px;
+    transform: scale(1) translateX(40px);
   }
 
   .phone-svg-content {
@@ -251,14 +251,15 @@ Interactive SVGs
       z-index: 7;
       right: 240;
       margin: 0 auto;
-      margin-top: 50px;
+      margin-top: 60px;
     }
   }
   .poster-container {
     @include span-columns(10);
     @include shift(1);
     margin-left: 123px;
-    margin-top:30px;
+    margin-top:-20px;
+    transform: scale(.75);
 
     .poster {
       @include span-columns(4);

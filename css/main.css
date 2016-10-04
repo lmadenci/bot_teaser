@@ -179,10 +179,10 @@ Interactive SVGs
     width: 385px;
     background-color: white; }
   .interactive-svg .iphone-svg-holder {
-    transform: scale(0.9) translateX(-480px) translateY(290px); }
+    transform: scale(0.8) translateX(-480px) translateY(290px); }
   .interactive-svg .macbook-svg-holder {
-    margin-top: 160px;
-    transform: scale(1.12) translateX(40px); }
+    margin-top: 240px;
+    transform: scale(1) translateX(40px); }
   .interactive-svg .phone-svg-content {
     margin-top: 185px;
     z-index: 5;
@@ -204,7 +204,7 @@ Interactive SVGs
       z-index: 7;
       right: 240;
       margin: 0 auto;
-      margin-top: 50px; }
+      margin-top: 60px; }
   .interactive-svg .poster-container {
     float: left;
     display: block;
@@ -212,7 +212,8 @@ Interactive SVGs
     width: 82.94039%;
     margin-left: 8.5298%;
     margin-left: 123px;
-    margin-top: 30px; }
+    margin-top: -20px;
+    transform: scale(0.75); }
     .interactive-svg .poster-container:last-child {
       margin-right: 0; }
     .interactive-svg .poster-container .poster {
