@@ -200,9 +200,9 @@ Interactive SVGs
   //background-repeat: no-repeat;
   //background-position: bottom;
   //background-position-x: 30px;
-  margin-top: 50px;
+  margin-top: 120px;
   margin-bottom: 40px;
-  height: 1350px;
+  height: 1025px;
   .svg-phone {
     transform: rotate(270deg);
     height: 580px;
@@ -227,11 +227,11 @@ Interactive SVGs
   }
 
   .iphone-svg-holder {
-    transform: scale(.8) translateX(-480px) translateY(290px) ;
+    transform: scale(.9) translateX(-450px) translateY(280px) ;
   }
   .macbook-svg-holder {
-    margin-top:240px;
-    transform: scale(1) translateX(40px);
+    //margin-top:540px;
+    transform: scale(1) translateX(80px) translateY(250px);
   }
 
   .phone-svg-content {
@@ -245,6 +245,7 @@ Interactive SVGs
   }
   .svg-wrapper {
     @include outer-container;
+    //margin-top: -140px;
     .svg {
       position: absolute;
       //left: 0;
@@ -254,12 +255,18 @@ Interactive SVGs
       margin-top: 60px;
     }
   }
-  .poster-container {
-    @include span-columns(10);
+  .svg-intro{
+    @include span-columns(4);
     @include shift(1);
-    margin-left: 123px;
-    margin-top:-20px;
-    transform: scale(.75);
+
+  }
+  .poster-container {
+    @include span-columns(6);
+    //border:2px solid red;
+    //@include shift(1);
+    //margin-left: 123px;
+    margin-top:8px;
+    //transform: scale(.75);
 
     .poster {
       @include span-columns(4);
@@ -279,7 +286,7 @@ Interactive SVGs
           border-color: $primary-color;
         }
         img {
-          height:184px !important;
+          height:134px !important;
         }
       }
     }

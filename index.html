@@ -138,12 +138,12 @@
       </div>
     </section>
     <!--section class="scroll-down">scroll</section-->
-    <section class="interactive-svg" >
-      <div class="svg-wrapper">
-        <h1 style="text-align:center;color:#4d5254;padding-top:100px;margin-top:0">Interactive on any device, anytime</h1>
-        <h2 style="text-align:center;color:#4d5254;">Mouse over to see this and this and click.</h2>
-        <!--a href=""><h2 style="text-align:center;color:#4d5254;margin-top:30px">Sunset // Spring // Blues</h2></a-->
+    <section class="interactive-svg">
 
+        <div class="svg-intro">
+          <h1 style="text-align:left;color:#4d5254;">Interactive on any device, anytime</h1>
+          <h2 style="text-align:left;color:#4d5254;">Mouse over to see this and this and click.</h2>
+        </div>
         <div class="poster-container">
         <div class="poster">
           <div ng-click="myCtrl.svg='blue'" class="img-wrapper">
@@ -161,7 +161,9 @@
           </div>
         </div>
       </div>
-      <div class="macbook-svg-holder" >
+      <div class="svg-wrapper">
+
+      <div class="macbook-svg-holder">
         <img src="Assets/macbook-white.png" width=1200px class="browser">
         <object ng-show="myCtrl.svg=='blue'" id="svgObject" class="svg" data='Assets/blueline.svg' type="image/svg+xml" width="750">
           Your browser doesn't support SVG
