@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7260494/6919152/css/fonts.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular-route.min.js"></script>
@@ -160,8 +162,8 @@
         </div>
       </div>
       <div style="height:170px"></div>
-        <!--img src="Assets/macbook-white.png" width=1500px class="browser"-->
-
+      <div class="macbook-svg-holder" >
+        <img src="Assets/macbook-white.png" width=1200px class="browser">
         <object ng-show="myCtrl.svg=='blue'" id="svgObject" class="svg" data='Assets/blueline.svg' type="image/svg+xml" width="750">
           Your browser doesn't support SVG
         </object>
@@ -171,26 +173,24 @@
         <object ng-show="myCtrl.svg=='spring'" id="svgObject" class="svg" data='Assets/springbox.svg' type="image/svg+xml" width="750">
           Your browser doesn't support SVG
         </object>
-
       </div>
-      <div class="iphone-svg-holder">
-        <img src="img/slack2_iphone.png" class="svg-phone">
-        <!--object ng-show="" id="svgObject" class="phone-svg-content" data="Assets/blueline.svg" type="image/svg+xml" width="280">
-          Your browser doesn't support SVG
-        </object-->
+    </div>
 
-        <object ng-show="myCtrl.svg=='blue'" id="svgObject" class="phone-svg-content" data='Assets/blueline.svg' type="image/svg+xml" width="280">
-          Your browser doesn't support SVG
-        </object>
-        <object ng-show="myCtrl.svg=='sunset'" id="svgObject" class="phone-svg-content" data='Assets/sunsetdonut.svg' type="image/svg+xml" width="280">
-          Your browser doesn't support SVG
-        </object>
-        <object ng-show="myCtrl.svg=='spring'" id="svgObject" class="phone-svg-content" data='Assets/springbox.svg' type="image/svg+xml" width="280">
-          Your browser doesn't support SVG
-        </object>
+    <div class="iphone-svg-holder">
+      <img src="img/slack2_iphone.png"  class="svg-phone">
 
-        <div class="slack-phone-background"></div>
-      </div>
+      <object ng-show="myCtrl.svg=='blue'" id="svgObject" class="phone-svg-content" data='Assets/blueline.svg' type="image/svg+xml" width="280">
+        Your browser doesn't support SVG
+      </object>
+      <object ng-show="myCtrl.svg=='sunset'" id="svgObject" class="phone-svg-content" data='Assets/sunsetdonut.svg' type="image/svg+xml" width="280">
+        Your browser doesn't support SVG
+      </object>
+      <object ng-show="myCtrl.svg=='spring'" id="svgObject" class="phone-svg-content" data='Assets/springbox.svg' type="image/svg+xml" width="280">
+        Your browser doesn't support SVG
+      </object>
+
+      <div class="slack-phone-background"></div>
+    </div>
 
       <!--object id="svgObject" class="svg" data='Assets/sunsetdonut.svg' type="image/svg+xml" height="500" width="500">
         Your browser doesn't support SVG

@@ -77,6 +77,30 @@ button {
   color: #fff;
   letter-spacing: 1px;
 }
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+svg {
+  text {
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif !important;
+  }
+}
+
+
 
 .im-fetch {
   height: 750px;
@@ -171,11 +195,11 @@ Fetch Introduction
 Interactive SVGs
 =====================================*/
 .interactive-svg {
-  background-image: url(/Assets/macbook-white.png);
-  background-size: 104%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-position-x: 30px;
+  //background-image: url(/Assets/macbook-white.png);
+  //background-size: 104%;
+  //background-repeat: no-repeat;
+  //background-position: bottom;
+  //background-position-x: 30px;
   margin-top: 50px;
   margin-bottom: 40px;
   height: 1350px;
@@ -201,9 +225,15 @@ Interactive SVGs
     width: 385px;
     background-color: white;
   }
+
   .iphone-svg-holder {
-    transform: scale(1) translateX(-410px) translateY(215px) ;
+    transform: scale(.9) translateX(-480px) translateY(290px) ;
   }
+  .macbook-svg-holder {
+    margin-top:160px;
+    transform: scale(1.12) translateX(40px);
+  }
+
   .phone-svg-content {
     margin-top:185px;
     z-index: 5;
@@ -221,7 +251,7 @@ Interactive SVGs
       z-index: 7;
       right: 240;
       margin: 0 auto;
-      margin-top: 225px;
+      margin-top: 50px;
     }
   }
   .poster-container {
